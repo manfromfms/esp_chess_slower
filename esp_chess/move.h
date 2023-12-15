@@ -9,7 +9,7 @@ namespace chs {
 		chs::square from;
 		chs::square to;
 
-		bool isCaputre = false;
+		bool isCapture = false;
 
 		move(chs::square f, chs::square t) {
 			from = f;
@@ -20,13 +20,13 @@ namespace chs {
 			from = f;
 			to = t;
 
-			isCaputre = isC;
+			isCapture = isC;
 		}
 
 		std::string toUCI() {
 			std::string result;
 
-			std::cout << this->from.col << " " << this->from.row << " " << this->to.col << " " << this->to.row;
+			//std::cout << this->from.col << " " << this->from.row << " " << this->to.col << " " << this->to.row << " " << (isCaputre ? "Capture" : "Move") << std::endl;
 
 			std::string columns = "abcdefgh";
 			std::string rows = "12345678";
